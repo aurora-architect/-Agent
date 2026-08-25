@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全与隐私问题
+    url: https://github.com/aurora-architect/-Agent/security
+    about: 请不要公开披露漏洞或患者信息；按照 SECURITY.md 使用私下报告渠道。
