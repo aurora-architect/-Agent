@@ -1,0 +1,44 @@
+name: 文档或方案审查
+description: 提交产品、知识治理、工作流或医疗边界问题
+title: "[Review] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请勿提交安全漏洞、真实患者信息、病历、密钥或生产配置。安全问题请按 SECURITY.md 私下报告。
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题领域
+      options:
+        - 产品方案
+        - 用户研究与证据
+        - 知识库与知识治理
+        - Agent 工作流
+        - 医疗安全与人工边界
+        - 权限、隐私与审计
+        - GitHub 文档与链接
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题说明
+      description: 请说明问题、影响范围和证据，不要粘贴真实患者资料。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+      description: 描述建议的修改方向或验收标准。
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 安全确认
+      options:
+        - label: 我确认内容不包含可识别患者信息、密钥或未公开安全漏洞
+          required: true
