@@ -1,0 +1,9 @@
+# Repository-wide ownership
+* @aurora-architect
+
+# High-risk medical and knowledge-governance documents
+/docs/prd/ @aurora-architect
+/docs/analysis/ @aurora-architect
+/docs/research/ @aurora-architect
+/docs/baseline/ @aurora-architect
+/SECURITY.md @aurora-architect
